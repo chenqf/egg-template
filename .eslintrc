@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-egg",
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": "off", // 可以使用console
+    "no-unused-vars": "off", // 可以存在未使用的变量
+    "indent": ["error", 2]
+  }
+}

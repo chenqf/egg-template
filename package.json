@@ -1,0 +1,53 @@
+{
+  "name": "icu",
+  "version": "1.0.0",
+  "description": "tgfe_icu",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.2.2",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-eslint": "^10.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.16.0",
+    "eslint-config-egg": "^7.5.1",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-icu",
+    "stop": "egg-scripts stop --title=egg-server-icu",
+    "dev": "egg-bin dev",
+    "lint": "eslint .",
+    "init:controller": "node initialize/bin/controller.js",
+    "init:service": "node initialize/bin/service.js",
+    "init:model": "node initialize/bin/model.js",
+    "init:all":"npm run init:controller && npm run init:service && npm run init:model",
+    "init:controller:delete":"node initialize/bin/delete/controller.js",
+    "init:service:delete":"node initialize/bin/delete/service.js",
+    "init:model:delete":"node initialize/bin/delete/model.js",
+    "init:all:delete":"npm run init:controller:delete && npm run init:service:delete && npm run init:model:delete"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "tgfe",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+替换标识
+__table_name__ 驼峰表名
+__up_table_name__ 首字母大写驼峰表名
+__table_name_zh__ 中文表名
+
+model replace 表实体字段替换
+__create_field_params__ 创建字段不含id
+__query_field_params__ 列表项除时间外
+__query_list_params__ 列表项加上startTime,endTime
